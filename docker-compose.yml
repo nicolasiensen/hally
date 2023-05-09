@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    links:
+      - postgres
+    command: rails s -b 0.0.0.0
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
