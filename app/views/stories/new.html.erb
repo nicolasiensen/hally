@@ -1,0 +1,20 @@
+<div>
+  <% if @story.present? %>
+    <%= simple_format(@story, class: "mb-5") %>
+  <% else %>
+    <h1 class="font-bold text-4xl mb-10">Crie uma nova história</h1>
+    <%= form_with method: :get do |form| %>
+      <p class="mb-5">
+        <%= form.label :age, "Idade" %>
+        <%= form.number_field :age, class: "dark:bg-slate-800 rounded dark:border-white", max: 10, min: 2, value: 4 %>
+      </p>
+      <p class="mb-5">
+        <%= form.label :words, "Palavras" %>
+        <%= form.select :words, @words, {}, class: "dark:bg-slate-800 rounded dark:border-white", multiple: true %>
+      </p>
+      <p>
+        <%= form.submit "Criar", class: "dark:bg-cyan-700 p-2 cursor-pointer rounded" %>
+      </p>
+    <% end %>
+  <% end %>
+</div>
