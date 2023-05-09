@@ -32,3 +32,4 @@
 
 /app/assets/builds/*
 !/app/assets/builds/.keep
+config/initializers/00_env_vars.rb
