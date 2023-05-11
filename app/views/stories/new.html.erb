@@ -3,7 +3,7 @@
   <%= form_with model: @story do |form| %>
     <div class="mb-5">
       <%= form.label :age, "Idade" %>
-      <%= form.number_field :age, class: "dark:bg-slate-800 rounded dark:border-white w-full", max: 10, min: 2, value: 4 %>
+      <%= form.select :age, options_for_select((2..10).to_a, params[:age] || 4), { include_hidden: false }, class: "dark:bg-slate-800 rounded dark:border-white w-full" %>
     </div>
     <div class="mb-5">
       <%= form.label :keywords, "Palavras-chave" %>
