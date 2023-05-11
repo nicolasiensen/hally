@@ -1,28 +1,16 @@
 <div class="max-w-sm lg:max-w-md">
-  <% if @story.present? %>
+  <h1 class="font-bold text-4xl mb-10">Crie uma nova história</h1>
+  <%= form_with model: @story do |form| %>
     <div class="mb-5">
-      <% params[:words].each do |word| %>
-        <span class="dark:bg-indigo-700 inline-block px-2 rounded-full"><%= word %></span>
-      <% end %>
+      <%= form.label :age, "Idade" %>
+      <%= form.number_field :age, class: "dark:bg-slate-800 rounded dark:border-white w-full", max: 10, min: 2, value: 4 %>
     </div>
-    <div class="text-2xl mb-5">
-      <%= simple_format(@story, class: "mb-5") %>
+    <div class="mb-5">
+      <%= form.label :keywords, "Palavras-chave" %>
+      <%= form.select :keywords, @keywords, { include_hidden: false }, class: "dark:bg-slate-800 rounded dark:border-white w-full", multiple: true, max: 3 %>
     </div>
-    <%= link_to "Nova história", stories_new_path, class: "dark:bg-cyan-700 p-2 cursor-pointer rounded" %>
-  <% else %>
-    <h1 class="font-bold text-4xl mb-10">Crie uma nova história</h1>
-    <%= form_with method: :get do |form| %>
-      <div class="mb-5">
-        <%= form.label :age, "Idade" %>
-        <%= form.number_field :age, class: "dark:bg-slate-800 rounded dark:border-white w-full", max: 10, min: 2, value: 4 %>
-      </div>
-      <div class="mb-5">
-        <%= form.label :words, "Palavras-chave" %>
-        <%= form.select :words, @words, {}, class: "dark:bg-slate-800 rounded dark:border-white w-full", multiple: true, max: 3 %>
-      </div>
-      <div>
-        <%= form.submit "Criar", class: "dark:bg-cyan-700 p-2 cursor-pointer rounded w-full" %>
-      </div>
-    <% end %>
+    <div>
+      <%= form.submit "Criar", class: "dark:bg-cyan-700 p-2 cursor-pointer rounded w-full" %>
+    </div>
   <% end %>
 </div>
