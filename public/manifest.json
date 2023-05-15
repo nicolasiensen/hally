@@ -1,0 +1,17 @@
+{
+  "name": "Hally",
+  "start_url": ".",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "sparkles_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "sparkles_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
