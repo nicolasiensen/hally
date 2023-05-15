@@ -69,4 +69,7 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   config.hosts << /.*\.preview\.app\.github\.dev/
+  config.hosts << /.*\.ngrok\-free\.app/
+
+  config.public_file_server.enabled = true
 end
