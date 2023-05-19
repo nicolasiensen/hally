@@ -1,0 +1,25 @@
+<div class="max-w-sm lg:max-w-md">
+  <h1 class="font-bold text-4xl mb-10 text-center">🔮 Nova história 🔮</h1>
+  <%= form_with model: @story_request do |form| %>
+    <div class="mb-5">
+      <%= form.label :age, "Idade" %>
+      <%= form.select :age, options_for_select((2..10).to_a, params[:age] || 4), { include_hidden: false }, class: "dark:bg-slate-800 rounded dark:border-white w-full" %>
+    </div>
+    <div>
+      <div class="grid gap-4 grid-cols-3 mb-5">
+        <% @keywords.each do |keyword| %>
+          <div class="select-none">
+            <%= check_box_tag "story_request[keywords][]", keyword[1], false, { class: "hidden peer", id: "keyword_#{keyword[1]}" } %>
+            <label class="text-center p-2 bg-black/10 rounded cursor-pointer peer-checked:bg-cyan-500 peer-checked:text-white block" for="keyword_<%= keyword[1] %>">
+              <div class="text-5xl mb-2"><%= keyword[0] %></div>
+              <div class="text-xs truncate"><%= keyword[1] %></div>
+            </label>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="sticky bottom-0">
+      <%= form.submit "Criar", class: "bg-cyan-500 text-white p-2 cursor-pointer rounded w-full border-cyan-400 border" %>
+    </div>
+  <% end %>
+</div>
