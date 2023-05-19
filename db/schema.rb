@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_19_192855) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_19_194426) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,6 +20,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_19_192855) do
     t.integer "age", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "story_request_id"
+    t.index ["story_request_id"], name: "index_stories_on_story_request_id"
   end
 
   create_table "story_requests", force: :cascade do |t|
@@ -29,4 +31,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_19_192855) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "stories", "story_requests"
 end
