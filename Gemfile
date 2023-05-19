@@ -77,3 +77,4 @@ end
 gem "ruby-openai"
 gem "sentry-ruby"
 gem "sentry-rails"
+gem "sidekiq", "~> 7.1"

@@ -7,8 +7,17 @@ services:
       - .:/usr/src/app
     links:
       - postgres
+      - redis
+      - sidekiq
     command: bash -c "rm -f tmp/pids/server.pid ; rails s -b 0.0.0.0"
   postgres:
     image: postgres
     environment:
       POSTGRES_PASSWORD: postgres
+  redis:
+    image: redis
+  sidekiq:
+    build: .
+    command: bundle exec sidekiq -C config/sidekiq.yml
+    volumes:
+      - .:/usr/src/app
