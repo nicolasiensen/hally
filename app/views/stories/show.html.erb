@@ -1,12 +1,12 @@
 <div class="max-w-sm lg:max-w-md">
   <div class="mb-5">
-    <% @story.keywords.each do |keyword| %>
+    <% @story.story_request.keywords.each do |keyword| %>
       <span class="bg-indigo-700 text-white inline-block px-2 rounded-full"><%= keyword %></span>
     <% end %>
   </div>
   <div class="text-2xl mb-10">
     <%= simple_format(@story.body, class: "mb-5") %>
   </div>
-    <%= link_to "Nova história", new_story_request_path(age: @story.age), class: "bg-cyan-500 text-white p-2 cursor-pointer rounded border-cyan-400 border" %>
+    <%= link_to "Nova história", new_story_request_path(age: @story.story_request.age), class: "bg-cyan-500 text-white p-2 cursor-pointer rounded border-cyan-400 border" %>
   </div>
 </div>

@@ -16,9 +16,7 @@ class StoryCreationJob < ApplicationJob
 
     Story.create!(
       story_request: story_request,
-      body: response.dig("choices", 0, "message", "content"),
-      keywords: story_request.keywords,
-      age: story_request.age
+      body: response.dig("choices", 0, "message", "content")
     )
   end
 end
