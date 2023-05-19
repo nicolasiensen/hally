@@ -10,7 +10,7 @@
         <% @keywords.each do |keyword| %>
           <div class="select-none">
             <%= check_box_tag "story[keywords][]", keyword[1], false, { class: "hidden peer", id: "keyword_#{keyword[1]}" } %>
-            <label class="text-center p-2 dark:bg-slate-700 rounded cursor-pointer peer-checked:bg-cyan-700 block" for="keyword_<%= keyword[1] %>">
+            <label class="text-center p-2 bg-black/10 rounded cursor-pointer peer-checked:bg-cyan-500 peer-checked:text-white block" for="keyword_<%= keyword[1] %>">
               <div class="text-5xl mb-2"><%= keyword[0] %></div>
               <div class="text-xs truncate"><%= keyword[1] %></div>
             </label>
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="sticky bottom-0">
-      <%= form.submit "Criar", class: "dark:bg-cyan-700 p-2 cursor-pointer rounded w-full dark:border-cyan-600 border" %>
+      <%= form.submit "Criar", class: "bg-cyan-500 text-white p-2 cursor-pointer rounded w-full border-cyan-400 border" %>
     </div>
   <% end %>
 </div>
