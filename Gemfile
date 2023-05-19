@@ -77,4 +77,7 @@ end
 gem "ruby-openai"
 gem "sentry-ruby"
 gem "sentry-rails"
-gem "sidekiq", "~> 7.1"
+
+# RedisCloud doesn't support commands introduced in Sidekiq 7
+# so we must stay on Sidekiq 6
+gem "sidekiq", "~> 6"
