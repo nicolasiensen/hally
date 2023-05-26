@@ -81,3 +81,5 @@ gem "sentry-rails"
 # RedisCloud doesn't support commands introduced in Sidekiq 7
 # so we must stay on Sidekiq 6
 gem "sidekiq", "~> 6"
+
+gem 'active_hash'
