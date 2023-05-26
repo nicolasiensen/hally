@@ -1,0 +1,335 @@
+- 
+  id: 1
+  emoji: "🕷️"
+  key: spider
+  text_pt_br: "Aranha"
+- 
+  id: 2
+  emoji: "🐋"
+  key: whale
+  text_pt_br: "Baleia"
+- 
+  id: 3
+  emoji: "🐇"
+  key: rabbit
+  text_pt_br: "Coelho"
+- 
+  id: 4
+  emoji: "🐘"
+  key: elephant
+  text_pt_br: "Elefante"
+- 
+  id: 5
+  emoji: "🐜"
+  key: ant
+  text_pt_br: "Formiga"
+- 
+  id: 6
+  emoji: "🦍"
+  key: gorilla
+  text_pt_br: "Gorila"
+- 
+  id: 7
+  emoji: "🦛"
+  key: hippo
+  text_pt_br: "Hipopótamo"
+- 
+  id: 8
+  emoji: "🐊"
+  key: alligator
+  text_pt_br: "Jacaré"
+- 
+  id: 9
+  emoji: "🦁"
+  key: lion
+  text_pt_br: "Leão"
+- 
+  id: 10
+  emoji: "🐒"
+  key: monkey
+  text_pt_br: "Macaco"
+- 
+  id: 11
+  emoji: "🐆"
+  key: jaguar
+  text_pt_br: "Onça"
+- 
+  id: 12
+  emoji: "🦆"
+  key: duck
+  text_pt_br: "Pato"
+- 
+  id: 13
+  emoji: "🐀"
+  key: mouse
+  text_pt_br: "Rato"
+- 
+  id: 14
+  emoji: "🐸"
+  key: frog
+  text_pt_br: "Sapo"
+- 
+  id: 15
+  emoji: "🐢"
+  key: turtle
+  text_pt_br: "Tartaruga"
+- 
+  id: 16
+  emoji: "🐻"
+  key: bear
+  text_pt_br: "Urso"
+- 
+  id: 17
+  emoji: "🐄"
+  key: cow
+  text_pt_br: "Vaca"
+- 
+  id: 18
+  emoji: "🦓"
+  key: zebra
+  text_pt_br: "Zebra"
+- 
+  id: 19
+  emoji: "💙"
+  key: blue-heart
+  text_pt_br: "Coração azul"
+- 
+  id: 20
+  emoji: "🥶"
+  key: frozen
+  text_pt_br: "Congelado"
+- 
+  id: 21
+  emoji: "😂"
+  key: funny
+  text_pt_br: "Divertido"
+- 
+  id: 22
+  emoji: "🔥"
+  key: fire
+  text_pt_br: "Fogo"
+- 
+  id: 23
+  emoji: "❤️"
+  key: love
+  text_pt_br: "Amor"
+- 
+  id: 24
+  emoji: "🎪"
+  key: circus
+  text_pt_br: "Circo"
+- 
+  id: 25
+  emoji: "🧊"
+  key: ice
+  text_pt_br: "Gelo"
+- 
+  id: 26
+  emoji: "🤥"
+  key: liar
+  text_pt_br: "Mentiroso"
+- 
+  id: 27
+  emoji: "👃"
+  key: nose
+  text_pt_br: "Nariz"
+- 
+  id: 28
+  emoji: "✈️"
+  key: airplane
+  text_pt_br: "Avião"
+- 
+  id: 29
+  emoji: "🤫"
+  key: quiet
+  text_pt_br: "Silencioso"
+- 
+  id: 30
+  emoji: "🦉"
+  key: owl
+  text_pt_br: "Coruja"
+- 
+  id: 31
+  emoji: "🍌"
+  key: banana
+  text_pt_br: "Banana"
+- 
+  id: 32
+  emoji: "🦄"
+  key: unicorn
+  text_pt_br: "Unicornio"
+- 
+  id: 33
+  emoji: "🏃‍♂️"
+  key: run
+  text_pt_br: "Correr"
+- 
+  id: 34
+  emoji: "😠"
+  key: angry
+  text_pt_br: "Zangado"
+- 
+  id: 35
+  emoji: "🍍"
+  key: pineapple
+  text_pt_br: "Abacaxi"
+- 
+  id: 36
+  emoji: "🍰"
+  key: cake
+  text_pt_br: "Bolo"
+- 
+  id: 37
+  emoji: "🍫"
+  key: chocolate
+  text_pt_br: "Chocolate"
+- 
+  id: 38
+  emoji: "🍨"
+  key: ice-cream
+  text_pt_br: "Sorvete"
+- 
+  id: 39
+  emoji: "🍚"
+  key: rice
+  text_pt_br: "Arroz"
+- 
+  id: 40
+  emoji: "⚽"
+  key: soccer
+  text_pt_br: "Futebol"
+- 
+  id: 41
+  emoji: "🐐"
+  key: goat
+  text_pt_br: "Cabra"
+- 
+  id: 42
+  emoji: "🐑"
+  key: sheep
+  text_pt_br: "Ovelha"
+- 
+  id: 43
+  emoji: "🥛"
+  key: milk
+  text_pt_br: "Leite"
+- 
+  id: 44
+  emoji: "🍉"
+  key: watermelon
+  text_pt_br: "Melancia"
+- 
+  id: 45
+  emoji: "🍝"
+  key: pasta
+  text_pt_br: "Macarrão"
+- 
+  id: 46
+  emoji: "🥚"
+  key: egg
+  text_pt_br: "Ovo"
+- 
+  id: 47
+  emoji: "🥒"
+  key: cucumber
+  text_pt_br: "Pepino"
+- 
+  id: 48
+  emoji: "🧀"
+  key: cheese
+  text_pt_br: "Queijo"
+- 
+  id: 49
+  emoji: "🥦"
+  key: broccoli
+  text_pt_br: "Brócolis"
+- 
+  id: 50
+  emoji: "🥗"
+  key: salad
+  text_pt_br: "Salada"
+- 
+  id: 51
+  emoji: "🚴"
+  key: bicycle-riding
+  text_pt_br: "Andar de bicicleta"
+- 
+  id: 52
+  emoji: "🍇"
+  key: grape
+  text_pt_br: "Uva"
+- 
+  id: 53
+  emoji: "🏓"
+  key: ping-pong
+  text_pt_br: "Ping pong"
+- 
+  id: 54
+  emoji: "⛸️"
+  key: ice-skating
+  text_pt_br: "Patinação no gelo"
+- 
+  id: 55
+  emoji: "🎣"
+  key: fishing
+  text_pt_br: "Pescar"
+- 
+  id: 56
+  emoji: "🎨"
+  key: drawing
+  text_pt_br: "Desenhar"
+- 
+  id: 57
+  emoji: "🎤"
+  key: singing
+  text_pt_br: "Cantar"
+- 
+  id: 58
+  emoji: "🎸"
+  key: guitar-playing
+  text_pt_br: "Tocar guitarra"
+- 
+  id: 59
+  emoji: "🥁"
+  key: drum-playing
+  text_pt_br: "Tocar bateria"
+- 
+  id: 60
+  emoji: "⛰️"
+  key: mountain
+  text_pt_br: "Montanha"
+- 
+  id: 61
+  emoji: "🌋"
+  key: volcano
+  text_pt_br: "Vulcão"
+- 
+  id: 62
+  emoji: "🏕️"
+  key: camping
+  text_pt_br: "Acampar"
+- 
+  id: 63
+  emoji: "🏖️"
+  key: beach
+  text_pt_br: "Praia"
+- 
+  id: 64
+  emoji: "🏠"
+  key: house
+  text_pt_br: "Casa"
+- 
+  id: 65
+  emoji: "🏰"
+  key: castle
+  text_pt_br: "Castelo"
+- 
+  id: 66
+  emoji: "🚂"
+  key: train
+  text_pt_br: "Trem"
+- 
+  id: 67
+  emoji: "🚑"
+  key: ambulance
+  text_pt_br: "Ambulância"
