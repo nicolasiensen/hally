@@ -1,0 +1,15 @@
+pt-BR:
+  views:
+    story_requests:
+      new:
+        title: "Nova história"
+        submit_button: "Criar história"
+      show:
+        creating_story: "Criando história..."
+    stories:
+      show:
+        new_story: "Nova história"
+  activerecord:
+    attributes:
+      story_request:
+        age: "Idade"

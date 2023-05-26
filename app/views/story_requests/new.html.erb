@@ -1,8 +1,8 @@
 <div class="max-w-sm lg:max-w-md">
-  <h1 class="font-bold text-4xl mb-10 text-center">🔮 Nova história 🔮</h1>
+  <h1 class="font-bold text-4xl mb-10 text-center">🔮 <%= t("views.story_requests.new.title") %> 🔮</h1>
   <%= form_with model: @story_request do |form| %>
     <div class="mb-5">
-      <%= form.label :age, "Idade" %>
+      <%= form.label :age %>
       <%= form.select :age, options_for_select((2..10).to_a, params[:age] || 4), { include_hidden: false }, class: "dark:bg-slate-800 rounded dark:border-white w-full" %>
     </div>
     <div>
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="sticky bottom-0">
-      <%= form.submit "Criar", class: "bg-cyan-500 text-white p-2 cursor-pointer rounded w-full border-cyan-400 border" %>
+      <%= form.submit t("views.story_requests.new.submit_button"), class: "bg-cyan-500 text-white p-2 cursor-pointer rounded w-full border-cyan-400 border" %>
     </div>
   <% end %>
 </div>
