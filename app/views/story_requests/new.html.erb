@@ -9,10 +9,10 @@
       <div class="grid gap-4 grid-cols-3 mb-5">
         <% @keywords.each do |keyword| %>
           <div class="select-none">
-            <%= check_box_tag "story_request[keywords][]", keyword[1], false, { class: "hidden peer", id: "keyword_#{keyword[1]}" } %>
-            <label class="text-center p-2 bg-black/10 rounded cursor-pointer peer-checked:bg-cyan-500 peer-checked:text-white block" for="keyword_<%= keyword[1] %>">
-              <div class="text-5xl mb-2"><%= keyword[0] %></div>
-              <div class="text-xs truncate"><%= keyword[1] %></div>
+            <%= check_box_tag "story_request[keywords][]", keyword.text_pt_br, false, { class: "hidden peer", id: "keyword_#{keyword.text_pt_br}" } %>
+            <label class="text-center p-2 bg-black/10 rounded cursor-pointer peer-checked:bg-cyan-500 peer-checked:text-white block" for="keyword_<%= keyword.text_pt_br %>">
+              <div class="text-5xl mb-2"><%= keyword.emoji %></div>
+              <div class="text-xs truncate"><%= keyword.text_pt_br %></div>
             </label>
           </div>
         <% end %>
