@@ -14,9 +14,13 @@ class StoryCreationJob < ApplicationJob
       }
     )
 
-    Story.create!(
+    story = Story.new(
       story_request: story_request,
       body: response.dig("choices", 0, "message", "content")
     )
+
+    unless story.save
+      retry_job
+    end
   end
 end
