@@ -7,6 +7,10 @@ class StoryRequestsController < ApplicationController
   def create
     @story_request = StoryRequest.new(story_request_params)
 
+    if @story_request.keywords.nil?
+      @story_request.keywords = Keyword.all.to_a.shuffle[0..2].map(&:text_pt_br)
+    end
+
     if @story_request.save
       redirect_to @story_request
     else
